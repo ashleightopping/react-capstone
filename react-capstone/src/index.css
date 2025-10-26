@@ -1,0 +1,185 @@
+/* Responsive design for mobile */
+.form {
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-event-container input,
+.add-event-container textarea,
+.add-event-container select {
+  font-family: Arial, sans-serif;
+}
+
+/* styling the help page */
+.help-container {
+  max-width: 800px;
+  margin: 50px auto; /* centers container */
+  padding: 20px;
+  background-color: #f9f9f9; /* matches form backgrounds */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.help-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.help-container h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.help-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
+/* styling the adding event form */
+.add-event-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.add-event-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.add-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit-btn {
+  background-color: #EE204D;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  display: block;    
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.add-event-form input::placeholder {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+/* styling for imported modal popup */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.delete-btn {
+  background-color: red;
+  color: #EE204D;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+.ReactModal__Content input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ReactModal__Content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px;
+}
+
+
+.ReactModal__Content button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.ReactModal__Content .delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.ReactModal__Content button:not(.delete-btn) {
+  background-color: #4B9CD3;
+  color: white;
+}
+
+
+.ReactModal__Content button:hover {
+  opacity: 0.9;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+}

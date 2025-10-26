@@ -1,0 +1,49 @@
+/* css for navigation bar only */
+
+.navbar {
+  width: 100vw; /* Full screen width */
+  position: fixed; /* Keep it stuck to the top */
+  top: 0;
+  left: 0;
+  background-color: #EE204D;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Keeps it above other content */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Helps on small screens */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_link:hover {
+  color: #000;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+}
